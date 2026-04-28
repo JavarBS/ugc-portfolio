@@ -5,11 +5,13 @@ const SECTIONS = ["Work", "Videos", "Services", "About", "Contact"];
 // ── Add your video filenames here. Place files in: public/videos/ ──────────
 // ── Example: { src: "/videos/my-video.mp4", poster: "/videos/my-thumb.jpg" }
 // ── poster is optional — a frame from the video will show if omitted ────────
-
 const videos = [
   { src: "/videos/video1.mp4", poster: "", title: "Product Spotlight", category: "Video Ad", platform: "Instagram Reel" },
-  { src: "/videos/video2.mp4", poster: "", title: "Product Review", category: "Lifestyle", platform: "TikTok" },
-  { src: "/videos/video3.mp4", poster: "", title: "Unboxing & First Impressions", category: "Product Demo", platform: "TikTok" },
+  { src: "/videos/video2.mp4", poster: "", title: "Day in the Life — LA", category: "Lifestyle", platform: "TikTok" },
+  { src: "/videos/video3.mp4", poster: "", title: "Unboxing & First Impressions", category: "Product Demo", platform: "Reels" },
+  { src: "/videos/video4.mp4", poster: "", title: "Brand Integration", category: "Video Ad", platform: "Reels" },
+  { src: "/videos/video5.mp4", poster: "", title: "Travel Vlog", category: "Lifestyle", platform: "TikTok" },
+  { src: "/videos/video6.mp4", poster: "", title: "Before & After Demo", category: "Product Demo", platform: "Instagram Reel" },
 ];
 const VIDEO_FILTERS = ["All", "Video Ad", "Lifestyle", "Product Demo"];
 
@@ -90,6 +92,13 @@ function FadeIn({ children, delay = 0, className = "" }) {
 export default function UGCPortfolio() {
   const [activeFilter, setActiveFilter] = useState("All");
   const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   function VideoCard({ v, featured = false }) {
     const videoRef = useRef(null);
     const [playing, setPlaying] = useState(false);
