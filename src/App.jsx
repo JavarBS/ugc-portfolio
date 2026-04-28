@@ -6,9 +6,9 @@ const SECTIONS = ["Work", "Videos", "Services", "About", "Contact"];
 // ── Example: { src: "/videos/my-video.mp4", poster: "/videos/my-thumb.jpg" }
 // ── poster is optional — a frame from the video will show if omitted ────────
 const videos = [
-  { src: "/videos/video2.mp4", poster: "", title: "Product Spotlight", category: "Video Ad", platform: "Instagram Reel" },
-  { src: "/videos/video3.mp4", poster: "", title: "Product Review", category: "Lifestyle", platform: "TikTok" },
-  { src: "/videos/video1.mp4", poster: "", title: "Unboxing & First Impressions", category: "Product Demo", platform: "TikTok" },
+  { src: "/videos/video1.mp4", poster: "", title: "Product Spotlight", category: "Video Ad", platform: "Instagram Reel" },
+  { src: "/videos/video2.mp4", poster: "", title: "Product Review", category: "Lifestyle", platform: "TikTok" },
+  { src: "/videos/video3.mp4", poster: "", title: "Unboxing & First Impressions", category: "Product Demo", platform: "TikTok" },
 ];
 const VIDEO_FILTERS = ["All", "Video Ad", "Lifestyle", "Product Demo"];
 
