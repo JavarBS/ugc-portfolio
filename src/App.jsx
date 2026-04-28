@@ -5,6 +5,7 @@ const SECTIONS = ["Work", "Videos", "Services", "About", "Contact"];
 // ── Add your video filenames here. Place files in: public/videos/ ──────────
 // ── Example: { src: "/videos/my-video.mp4", poster: "/videos/my-thumb.jpg" }
 // ── poster is optional — a frame from the video will show if omitted ────────
+
 const videos = [
   { src: "/videos/video1.mp4", poster: "", title: "Product Spotlight", category: "Video Ad", platform: "Instagram Reel" },
   { src: "/videos/video2.mp4", poster: "", title: "Product Review", category: "Lifestyle", platform: "TikTok" },
@@ -88,7 +89,7 @@ function FadeIn({ children, delay = 0, className = "" }) {
 
 export default function UGCPortfolio() {
   const [activeFilter, setActiveFilter] = useState("All");
-
+  const [scrolled, setScrolled] = useState(false);
   function VideoCard({ v, featured = false }) {
     const videoRef = useRef(null);
     const [playing, setPlaying] = useState(false);
