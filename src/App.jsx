@@ -602,7 +602,7 @@ export default function UGCPortfolio() {
 
           <FadeIn delay={0.1}>
             <p style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#333", textAlign: "center", marginTop: "40px" }}>
-              * Swap YouTube video IDs in the <code style={{ color: "#C9A84C44" }}>videos</code> array with your own content
+              * Lets Create More <code style={{ color: "#C9A84C44" }}>videos</code> Your Product my content.
             </p>
           </FadeIn>
         </div>
