@@ -6,9 +6,9 @@ const SECTIONS = ["Work", "Videos", "Services", "About", "Contact"];
 // ── Example: { src: "/videos/my-video.mp4", poster: "/videos/my-thumb.jpg" }
 // ── poster is optional — a frame from the video will show if omitted ────────
 const videos = [
-  { src: "/videos/video1.Mp4", poster: "", title: "Product Spotlight", category: "Video Ad", platform: "Instagram Reel" },
-  { src: "/videos/video2.Mp4", poster: "", title: "Day in the Life — LA", category: "Lifestyle", platform: "TikTok" },
-  { src: "/videos/video3.Mp4", poster: "", title: "Unboxing & First Impressions", category: "Product Demo", platform: "Reels" },
+  { src: "/videos/video1.MP4", poster: "", title: "Product Spotlight", category: "Video Ad", platform: "Instagram Reel" },
+  { src: "/videos/video2.MP4", poster: "", title: "Day in the Life — LA", category: "Lifestyle", platform: "TikTok" },
+  { src: "/videos/video3.MP4", poster: "", title: "Unboxing & First Impressions", category: "Product Demo", platform: "Reels" },
 ];
 const VIDEO_FILTERS = ["All", "Video Ad", "Lifestyle", "Product Demo"];
 
@@ -177,8 +177,9 @@ export default function UGCPortfolio() {
     </div>
     <div style="text-align:right;padding-top:12px">
       <p style="color:#C9A84C;font-size:11px;letter-spacing:.2em;text-transform:uppercase">Media Kit 2026</p>
-      <p style="margin-top:8px">hello@javarbrownscott.com</p>
-      <p>instagram.com/javarscott</p>
+      <p style="margin-top:8px">javerbs@gmail.com</p>
+      <p>instagram.com/java_made</p>
+      <p>tiktok.com/@java_made</p>
     </div>
   </div>
 
@@ -225,7 +226,7 @@ export default function UGCPortfolio() {
   </div>
 
   <div class="footer">
-    <span>hello@javarbrownscott.com</span>&nbsp;·&nbsp;<span>Los Angeles, CA</span>&nbsp;·&nbsp;<span>Available Remote &amp; On-Site</span>&nbsp;·&nbsp;<span>© 2026 Javar Brown-Scott</span>
+    <span>javerbs@gmail.com</span>&nbsp;·&nbsp;<span>Los Angeles, CA</span>&nbsp;·&nbsp;<span>Available Remote &amp; On-Site</span>&nbsp;·&nbsp;<span>© 2026 Javar Brown-Scott</span>
   </div>
 </body>
 </html>`;
@@ -641,7 +642,8 @@ export default function UGCPortfolio() {
           <FadeIn>
             <div style={{ position: "relative" }}>
               <div style={{ width: "100%", aspectRatio: "3/4", background: "#0e0e0e", border: "1px solid #1a1a1a", position: "relative", overflow: "hidden" }}>
-                <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 30% 30%, #C9A84C0a 0%, transparent 60%)" }} />
+                <img src="/src/assets/hero.png" alt="Javar Brown-Scott" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+                <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(8,8,8,0.85) 0%, transparent 50%)" }} />
                 <div style={{ position: "absolute", bottom: "24px", left: "24px", right: "24px" }}>
                   <div style={{ width: "32px", height: "1px", background: "#C9A84C", marginBottom: "12px" }} />
                   <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "18px", color: "#C9A84C", fontStyle: "italic" }}>Javar Brown-Scott</div>
@@ -686,8 +688,8 @@ export default function UGCPortfolio() {
             Whether it's a single deliverable or an ongoing partnership, let's build something that actually moves people.
           </p>
           <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="mailto:hello@javarbrownscott.com" className="gold-btn"><span>📩 Send an Email</span></a>
-            <a href="https://www.instagram.com" target="_blank" className="ghost-btn">Instagram DM</a>
+            <a href="mailto:javerbs@gmail.com" className="gold-btn"><span>📩 Send an Email</span></a>
+            <a href="https://www.instagram.com/java_made" target="_blank" className="ghost-btn">Instagram DM</a>
             <button className="kit-btn" onClick={handleMediaKitDownload}>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
