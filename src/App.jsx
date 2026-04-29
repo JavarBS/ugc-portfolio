@@ -642,7 +642,7 @@ export default function UGCPortfolio() {
           <FadeIn>
             <div style={{ position: "relative" }}>
               <div style={{ width: "100%", aspectRatio: "3/4", background: "#0e0e0e", border: "1px solid #1a1a1a", position: "relative", overflow: "hidden" }}>
-                <img src="/hero.png"" alt="Javar Brown-Scott" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+                <img src="/hero.png" alt="Javar Brown-Scott" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
                 <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(8,8,8,0.85) 0%, transparent 50%)" }} />
                 <div style={{ position: "absolute", bottom: "24px", left: "24px", right: "24px" }}>
                   <div style={{ width: "32px", height: "1px", background: "#C9A84C", marginBottom: "12px" }} />
